@@ -16,6 +16,11 @@ public class Principal1 {
 		
 		System.out.println(String);
 		
+		String _ = "Java";
+		
+		//System.out.println(_);
+
+		
 	}
 
 }
