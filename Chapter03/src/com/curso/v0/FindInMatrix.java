@@ -12,7 +12,7 @@ public class FindInMatrix {
 		int positionX = -1;
 		int positionY = -1;
 
-		LABEL: for (int i = 0; i < list.length; i++) {
+		PATO: for (int i = 0; i < list.length; i++) {
 
 			for (int j = 0; j < list[i].length; j++) {
 
@@ -20,7 +20,7 @@ public class FindInMatrix {
 					positionX = i;
 					positionY = j;
 					System.out.println("Valor encontrado: ("+positionX+","+positionY+")");
-					break LABEL;
+					continue PATO; //break; //{2,0} 
 				}
 			}
 		}
