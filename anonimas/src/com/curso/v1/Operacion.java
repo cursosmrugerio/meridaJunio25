@@ -1,6 +1,7 @@
 package com.curso.v1;
 
 public interface Operacion { 
+	//public abstract
 	int ejecuta(int x, int y);
 }
 

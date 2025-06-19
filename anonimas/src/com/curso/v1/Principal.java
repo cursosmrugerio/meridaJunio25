@@ -6,7 +6,7 @@ public class Principal {
 		System.out.println("V1 Interface");
 		int res = 0;
 
-		//CLASES ANONIMAS => Lambdas
+		//CLASES ANONIMAS => LAMBDAS
 		Operacion ope1 = new Operacion() {
 			@Override
 			public int ejecuta(int x, int y) {
@@ -25,18 +25,16 @@ public class Principal {
 				return x - y;
 			}
 		};
-		System.out.println(ope2.getClass().getSimpleName());
 		res = ope2.ejecuta(8,4);
 		System.out.println(res);
 		
 		Operacion ope3 = new Operacion() {
 			@Override
-			public int ejecuta(int x, int y) {
+			public int ejecuta(int pato1, int pato2) {
 				System.out.println("Multi");
-				return x * y;
+				return pato1 * pato2;
 			}
 		};
-		System.out.println(ope3.getClass().getSimpleName());
 		res = ope3.ejecuta(8,4);
 		System.out.println(res);
 
@@ -47,7 +45,6 @@ public class Principal {
 				return (int)Math.pow(x, y);
 			}
 		};
-		System.out.println(ope4.getClass().getSimpleName());
 		res = ope4.ejecuta(8,4);
 		System.out.println(res);
 		
